@@ -8,18 +8,18 @@ const Weather = props => (
 	 	</p> 
 	 }
 	 { 	
-	 	props.temperature && <p className="weather__key"> Temperature: 
-	 		<span className="weather__value"> { props.temperature }	</span>
+	 	props.time && <p className="weather__key"> Time: 
+	 		<span className="weather__value"> { props.time }	</span>
 	 	</p> 
 	 }
 	 { 	
-	 	props.humidity && <p className="weather__key"> Humidity: 
-	 		<span className="weather__value"> { props.humidity } </span>
+	 	props.pm25 && <p className="weather__key"> 초 미세먼지: 
+	 		<span className="weather__value"> { props.pm25 } </span>
 	 	</p> 
 	 }
 	 { 	
-	 	props.description && <p className="weather__key"> Conditions: 
-	 		<span className="weather__value"> { props.description } </span>
+	 	props.pm10 && <p className="weather__key"> 미세먼지: 
+	 		<span className="weather__value"> { props.pm10 } </span>
 	 </p> 
 	 }
 	 { 
